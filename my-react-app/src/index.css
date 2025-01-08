@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 90px;
+    
 }
 
 .movie-card-container{
@@ -52,7 +52,14 @@
     margin-right: 10px;
 }
 .movie-card{
-    position: relative;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .movie-card button{
     position: absolute;
@@ -64,6 +71,9 @@
     background-color: transparent;
     border: none;
     border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: rem;
 }
 .active{
     color: red;
@@ -72,8 +82,8 @@
     background-color: #874a4a;
 }
 .movie-card img{
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     object-fit: fill;
 }
 .movie-details{
