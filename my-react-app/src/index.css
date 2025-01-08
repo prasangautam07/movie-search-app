@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px;
+    margin: 0;
+}
+.navbar-brand{
+    font-size: 24px;
+    flex: 0.25;
+}
+.navbar-brand-name{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.navbar-links{
+    display: flex;
+    flex: 0.2;
+    justify-content: space-between;
+}
+.nav-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* movie card container */
+.movies-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 90px;
+}
+
+.movie-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: azure;
+    max-width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.movie-card{
+    position: relative;
+}
+.movie-card button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+.active{
+    color: red;
+}
+.movie-card button:hover{
+    background-color: #874a4a;
+}
+.movie-card img{
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+}
+.movie-details{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.movie-details h1{
+    margin-bottom: 5px;
+}
+
+/* home.jsx */
+.search-form{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.search-input{
+    padding: 10px;
+    width: 40vw;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.search-input:focus{
+    border: 2px solid rgb(37, 37, 132);
+}
+
+.search-btn{
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(11, 171, 46, 0.756);
+    cursor: pointer;
+}
+.search-btn:hover{
+    opacity: 0.8;
+}
